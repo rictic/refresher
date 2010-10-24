@@ -1,6 +1,6 @@
 { "name" : "refresher"
 , "version" : "0.1.0"
-, "description" : "a simple system for editing html with magical refreshing on save"
+, "description" : "a simple tool that magically refreshes your html when you make an edit"
 , "engines" : ["node >=0.1.97"]
 , "bin" : { "refresher" : "./refresher.js"}
 }
