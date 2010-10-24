@@ -3,6 +3,7 @@ var url = require('url');
 var fs = require('fs');
 var path = require('path');
 var util = require('./util');
+
 function createWebServer(port, host, webroot) {
   var fingerprint;
   var server = http.createServer(function (request, response) {
@@ -34,6 +35,7 @@ function createWebServer(port, host, webroot) {
   
   return server;
 }
+
 function handleHtml(pathname, request, response) {
   fs.readFile(pathname, "utf8", function(err, data) {
     if (err) {
@@ -68,8 +70,7 @@ function serveFile(pathname, response) {
 
 var webroot = "."
 var web_server = createWebServer(8124, "0.0.0.0", webroot);
-console.log('Server running at http://127.0.0.1:8124/');
-
+console.log('Refresher web server running at http://localhost:8124/');
 
 
 //ok, all of that is just setup, here's the meat:
