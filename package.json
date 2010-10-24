@@ -1,0 +1,6 @@
+{ "name" : "refresher"
+, "version" : "0.1.0"
+, "description" : "a simple system for editing html with magical refreshing on save"
+, "engines" : ["node >=0.1.97"]
+, "bin" : { "refresher" : "./refresher.js"}
+}
